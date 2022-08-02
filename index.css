@@ -1,0 +1,475 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+    background: #2E333A;
+    font-weight: 500;
+    font-family: 'Poppins';
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+.navbar {
+    background: #2E333A;
+    box-shadow: -6.22302px -6.22302px 18.6691px #3B4451, 6.22302px 6.22302px 18.6691px #000000;
+    width: 100%;
+    height: 8vh;
+    Padding: 15px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 3;
+}
+
+.tech_img {
+    margin-left: 30px;
+}
+
+.user_container {
+    margin-right: 30px;
+    display: flex;
+    height: 4rem;
+}
+
+.search {
+    width: 500px;
+    height: 55px;
+    align-items: center;
+    padding: 0px 20px;
+    gap: 10px;
+    background: #2E333A;
+    box-shadow: inset -6.22302px -6.22302px 6.22302px #3B4451, inset 3.73381px 3.73381px 6.22302px #000000;
+    border-radius: 15px;
+}
+
+.card_btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    background: #2e333a;
+    box-shadow: -6.22302px -6.22302px 18.6691px #3b4451,
+        6.22302px 6.22302px 18.6691px #000000;
+    border-radius: 12px;
+    margin-right: 20px;
+}
+
+.main_section {
+    top: 11vh;
+    position: absolute;
+    margin-top: 50px;
+    width: 100%;
+}
+
+.side_menu {
+    height: calc(92vh - 6.25rem);
+    width: 7rem;
+    background: #2E333A;
+    box-shadow: -6.22302px -6.22302px 18.6691px #3B4451, 6.22302px 6.22302px 18.6691px #000000;
+    border-radius: 0px 25px 25px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    position: fixed;
+}
+
+.menu_items {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    height: 80%;
+    justify-content: space-between;
+}
+
+.section_1_contents {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 23.25rem;
+    margin-right: 15.375rem;
+}
+
+.today_so_far_card {
+    width: 22.563rem;
+    height: 27.313rem;
+    background: #2E333A;
+    box-shadow: 14px 14px 40px rgba(16, 16, 18, 0.75), -7px -7px 30px #262E32;
+    border-radius: 25px;
+}
+
+.so_far_card_head {
+    margin: 25px 25px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.so_far_card_body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 25px 25px;
+    height: calc(100% - 11rem);
+}
+
+.so_far_card_body_tags {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 25px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sqr_card_container {
+    width: 52.5rem;
+    height: 27.313rem;
+    margin-left: 6.25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.cards_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sqr_card {
+    width: 14rem;
+    height: 11rem;
+    background: #2E333A;
+    box-shadow: -6.22302px -6.22302px 18.6691px #3B4451, 6.22302px 6.22302px 18.6691px #000000;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 10px;
+
+}
+
+.icon_label {
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    color: #FFFFFF;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.graph_sec {
+    height: 3.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.graph_sec_1 {
+    display: flex;
+    justify-content: center;
+}
+
+.section_2 {
+    margin-top: 4.75rem;
+}
+
+.section_2_contents {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 12.375rem;
+    margin-right: 4.5rem;
+}
+
+.widget_card {
+    width: 31.125rem;
+    height: 42.5rem;
+    background: #2E333A;
+    box-shadow: -6.22302px -6.22302px 18.6691px #3B4451, 6.22302px 6.22302px 18.6691px #000000;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.pro_pic_container {
+    height: 17.25rem;
+    width: 20.563rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile_pic {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.deatails_1 {
+    height: 5.063rem;
+    width: 20.563rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.deatails_1_col {
+    width: 4.313rem;
+    height: 100%;
+    text-align: center;
+}
+
+.deatails_2 {
+    height: 6.75rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.deatails_2_row {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 50%;
+}
+
+.deatails_2_col {
+    width: 7.188rem;
+}
+
+.widget_card_footer {
+    height: 3.125rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.details_btn {
+    width: 10.063rem;
+    height: 3.125rem;
+    background: #2E333A;
+    box-shadow: -6.22302px -6.22302px 18.6691px #3B4451, 6.22302px 6.22302px 18.6691px #000000;
+    border-radius: 12px;
+    margin-right: 25px;
+    margin-left: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 23px;
+    line-height: 130%;
+    color: #72E4F9;
+}
+
+.edit_btn {
+    width: 50px;
+    height: 50px;
+    background: #2E333A;
+    box-shadow: -6.22302px -6.22302px 18.6691px #3B4451, 6.22302px 6.22302px 18.6691px #000000;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pr_status {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 17px;
+}
+
+.profile_1 {
+    width: 6.25rem;
+    height: 6.25rem;
+}
+
+.status_foot {
+    display: flex;
+    justify-content: center;
+}
+
+.graph_container {
+    width: 100%;
+    height: 18.625rem;
+}
+
+.drop_down {
+    width: 7.8rem;
+    height: 2rem;
+    background: #2E333A;
+    box-shadow: inset -6.22302px -6.22302px 6.22302px #3b4451, inset 3.73381px 3.73381px 6.22302px #000000;
+    border-radius: 15px;
+    padding: 5px 10px;
+    color: #FFFFFF;
+    border: #000000;
+    margin-bottom: 1rem;
+}
+
+.main_graph {
+    height: calc(100% - 2rem);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.graph_temps {
+    width: 5.8rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.graph_templ_cards {
+    font-size: 14px;
+    width: 66px;
+    height: 30px;
+    opacity: 0.5;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    padding: 6px;
+    justify-content: center;
+}
