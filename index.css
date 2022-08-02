@@ -185,6 +185,18 @@ table {
     margin-right: 20px;
 }
 
+.card_btn2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    box-shadow: inset -6.22302px -6.22302px 6.22302px #3B4451, inset 3.73381px 3.73381px 6.22302px #000000;
+    border-radius: 12px;
+    margin-right: 20px;
+}
+
 .main_section {
     top: 11vh;
     position: absolute;
@@ -218,8 +230,8 @@ table {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-left: 23.25rem;
-    margin-right: 15.375rem;
+    margin-left: 22.25rem;
+    margin-right: 14.375rem;
 }
 
 .today_so_far_card {
@@ -259,14 +271,16 @@ table {
 .sqr_card_container {
     width: 52.5rem;
     height: 27.313rem;
-    margin-left: 6.25rem;
+    margin-left: 8.25rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
 .cards_container {
-    display: flex;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr);
+    gap: 2.5rem;
     align-items: center;
     justify-content: space-between;
 }
@@ -319,14 +333,14 @@ table {
 }
 
 .widget_card {
-    width: 31.125rem;
+    width: 29.125rem;
     height: 42.5rem;
     background: #2E333A;
     box-shadow: -6.22302px -6.22302px 18.6691px #3B4451, 6.22302px 6.22302px 18.6691px #000000;
     border-radius: 30px;
     display: flex;
     flex-direction: column;
-    padding: 20px;
+    padding: 15px;
     align-items: center;
     justify-content: space-between;
 }
@@ -347,35 +361,36 @@ table {
     margin-bottom: 20px;
 }
 
-.deatails_1 {
+.details_1 {
     height: 5.063rem;
     width: 20.563rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-left: 8px;
 }
 
-.deatails_1_col {
+.details_1_col {
     width: 4.313rem;
     height: 100%;
     text-align: center;
 }
 
-.deatails_2 {
+.details_2 {
     height: 6.75rem;
     width: 100%;
     display: flex;
     flex-direction: column;
 }
 
-.deatails_2_row {
+.details_2_row {
     display: flex;
     align-items: center;
     justify-content: space-around;
     height: 50%;
 }
 
-.deatails_2_col {
+.details_2_col {
     width: 7.188rem;
 }
 
@@ -472,4 +487,91 @@ table {
     align-items: center;
     padding: 6px;
     justify-content: center;
+}
+
+@media screen and (max-width: 1850px) {
+    .section_1_contents {
+        margin-left: 16.5rem;
+        margin-right: 9.5rem;
+    }
+
+    .sqr_card_container {
+        margin-left: 2.5rem;
+    }
+
+    .section_2_contents {
+        margin-left: 11rem;
+        margin-right: 4rem;
+    }
+
+    .widget_card {
+        width: 26rem;
+        padding: 14px;
+    }
+}
+
+@media screen and (max-width: 1600px) {
+    .section_1_contents {
+        display: grid;
+        place-items: center;
+        margin: 0 21%;
+    }
+
+    .today_so_far_card {
+        height: 24.313rem;
+        padding: 0px 50px;
+        margin-top: 2rem;
+    }
+
+    .sqr_card_container {
+        margin-top: 4rem;
+    }
+
+    .section_2_contents {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+        gap: 2rem;
+        margin-bottom: 3rem;
+    }
+
+    .widget_card {
+        margin: 1rem 3rem;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .side_menu{
+        height: 100vh;
+    }
+    .section_1_contents {
+        margin: 0 8%;
+    }
+
+    .cards_container {
+        grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    }
+
+    .section_2 {
+        margin-top: 20rem;
+    }
+
+    .sqr_card_container {
+        margin-left: 7rem;
+    }
+
+    .section_2_contents {
+        grid-template-columns: minmax(0, 1fr);
+        align-items: center;
+        margin: 0 23%;
+    }
+
+    .widget_card {
+        width: 32rem;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .section_2_contents {
+        margin: 0 35%;
+    }
 }
