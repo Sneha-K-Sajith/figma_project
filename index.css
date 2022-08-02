@@ -151,6 +151,10 @@ table {
     z-index: 3;
 }
 
+.nav_btn_container {
+    display: none;
+}
+
 .tech_img {
     margin-left: 30px;
 }
@@ -539,9 +543,25 @@ table {
 }
 
 @media screen and (max-width: 1200px) {
-    .side_menu{
-        height: 100vh;
+    .nav_display{
+        display: none;
     }
+    .nav_btn_container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 1.8rem;
+        width: 2.188rem;
+        margin-left: 1.25rem;
+        margin-bottom: 1.25rem;
+        border: 1px outset white;
+        padding: 5px;
+        border-radius: 4px;
+    }
+    .nav_btn {
+        height: 95%;
+    }
+
     .section_1_contents {
         margin: 0 8%;
     }
