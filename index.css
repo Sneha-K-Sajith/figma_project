@@ -156,7 +156,7 @@ table {
 }
 
 .tech_img1 {
-    margin-left: 1.875rem;
+    margin-left: 2rem;
 }
 
 .tech_img2 {
@@ -167,6 +167,9 @@ table {
     margin-right: 1.875rem;
     display: flex;
     height: 4rem;
+}
+.search.mobile{
+    display: none;
 }
 
 .search {
@@ -199,7 +202,7 @@ table {
     box-shadow: -0.389rem -0.389rem 1.167rem #3b4451,
         0.389rem 0.389rem 1.167rem #000000;
     border-radius: 0.75rem;
-    margin-right: 1.25rem;
+    margin-right: 1rem;
 }
 
 .card_btn img,
@@ -590,6 +593,15 @@ table {
 }
 
 @media only screen and (max-width: 920px) {
+    html {
+        font-size: 9px;
+    }
+
+    .tech_img1 {
+        height: 3.75rem;
+        width: 10rem;
+    }
+
     .section_1_contents {
         flex-direction: column;
     }
@@ -603,14 +615,15 @@ table {
     }
 
     .widget_card {
-        width: 35.125rem;
-        padding: 2rem 5rem;
+        width: 33.125rem;
+        padding: 2rem 3rem;
     }
 }
 
-@media only screen and (max-width: 550px) {
+@media only screen and (max-width: 700px) {
     .search {
-        display: none;
+        width: 20.4rem;
+        height: 3rem;
     }
 }
 
@@ -631,7 +644,7 @@ table {
 
     .toggle_btn {
         height: 4rem;
-        width: 6rem;
+        width: 4rem;
         display: block;
         background: #2E333A;
         box-shadow: -0.389rem -0.389rem 1.167rem #3B4451, 0.389rem 0.389rem 1.167rem #000000;
@@ -639,15 +652,50 @@ table {
         display: flex;
         align-items: center;
         justify-content: center;
+        border-left: 0;
     }
 
     .tech_img1 {
+        height: 2.2rem;
+        width: 6rem;
+        margin-left: 0.5rem;
+    }
+
+    /* .tech_img2 {
+        display: block;
+        margin-left: 1.875rem;
+    } */
+
+    .search {
         display: none;
     }
 
-    .tech_img2 {
-        display: block;
-        margin-left: 1.875rem;
+    .search.mobile {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 2rem;
+        height: 100%;
+        cursor: pointer;
+        background: #2e333a;
+        box-shadow: -0.389rem -0.389rem 1.167rem #3b4451, 0.389rem 0.389rem 1.167rem #000000;
+        border-radius: 0.75rem;
+        margin-right: 1rem;
+    }
+
+    .search.mobile.active {
+        width: 20rem;
+        background: #2e333a;
+        box-shadow: inset -0.389rem -0.389rem 0.389rem #3b4451,
+            inset 0.233rem 0.233rem 0.389rem #000000;
+    }
+
+    .search_box {
+        display: none;
+    }
+
+    .search_box.active {
+        display: flex;
     }
 
     .navbar {
