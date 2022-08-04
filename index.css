@@ -168,7 +168,8 @@ table {
     display: flex;
     height: 4rem;
 }
-.search.mobile{
+
+.search.mobile {
     display: none;
 }
 
@@ -656,9 +657,9 @@ table {
     }
 
     .tech_img1 {
-        height: 2.2rem;
-        width: 6rem;
-        margin-left: 0.5rem;
+        height: 3.4rem;
+        width: 7rem;
+        margin-left: 1rem;
     }
 
     /* .tech_img2 {
@@ -674,17 +675,17 @@ table {
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 2rem;
+        width: 1rem;
         height: 100%;
         cursor: pointer;
         background: #2e333a;
         box-shadow: -0.389rem -0.389rem 1.167rem #3b4451, 0.389rem 0.389rem 1.167rem #000000;
         border-radius: 0.75rem;
-        margin-right: 1rem;
+        margin-right: 0.5rem;
     }
 
     .search.mobile.active {
-        width: 20rem;
+        width: 16rem;
         background: #2e333a;
         box-shadow: inset -0.389rem -0.389rem 0.389rem #3b4451,
             inset 0.233rem 0.233rem 0.389rem #000000;
@@ -696,6 +697,27 @@ table {
 
     .search_box.active {
         display: flex;
+        font-size: 1.2rem;
+    }
+    .search_icon img{
+        height: 1.2rem;
+        width: 1.2rem;
+    }
+
+    .user_container {
+        height: 3rem;
+        margin-right: 1rem;
+    }
+
+    .user_container .card_btn {
+        height: 3rem;
+        width: 3rem;
+        margin-right: .5rem;
+    }
+
+    .user_img {
+        height: 3rem;
+        width: 3rem;
     }
 
     .navbar {
